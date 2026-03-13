@@ -3,10 +3,16 @@ int main(){
     int long long num;
     int sum = 0;
     scanf("%d",&num);
-    while(num>0){
-        sum =sum + num % 10;
-        num = num/10;
+    while(num>=10){
+        sum = 0;
+
+        while(num>0){
+            sum =sum + num % 10;
+            num = num/10;
+        }
+        num=sum;
     }
-    printf("%d\n",sum);
+    
+    printf("%d\n",num);
     return 0;
 }
