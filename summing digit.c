@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main(){
-    int long long num;
+    long long num;
     int sum = 0;
-    scanf("%d",&num);
+    scanf("%lld",&num);
     while(num>=10){
         sum = 0;
 
@@ -13,6 +13,6 @@ int main(){
         num=sum;
     }
     
-    printf("%d\n",num);
+    printf("%lld\n",num);
     return 0;
 }
